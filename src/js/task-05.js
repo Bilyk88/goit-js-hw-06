@@ -4,6 +4,11 @@ const outputRef = document.querySelector('#name-output');
 inputRef.addEventListener('input', inputName);
 
 function inputName() {
-    outputRef.textContent = inputRef.value;
+      
+    if (inputRef.value !== '') {
+        outputRef.textContent = inputRef.value
+    }
+    else {
+        outputRef.textContent = 'Anonymous';
+    };
 }
-    
