@@ -1,7 +1,6 @@
 const inputRef = document.querySelector('#validation-input');
 
 const passwordLength = Number(inputRef.dataset.length);
-console.log(typeof (passwordLength));
 
 inputRef.addEventListener('blur', verifyPassword);
 
