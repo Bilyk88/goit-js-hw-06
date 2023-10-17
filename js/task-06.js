@@ -6,7 +6,8 @@ inputRef.addEventListener('blur', verifyPassword);
 
 function verifyPassword() {
 
-    if (inputRef.value.length < passwordLength) {
+    if (inputRef.value.trim().length !== passwordLength) {
+        inputRef.classList.remove('valid');
         inputRef.classList.add('invalid');
         
     } else {
